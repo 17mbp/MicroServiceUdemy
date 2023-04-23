@@ -44,9 +44,13 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.1, )"
+            },
             "Dapper": {
               "target": "Package",
-              "version": "[2.0.78, )"
+              "version": "[2.0.123, )"
             },
             "Grpc.AspNetCore": {
               "target": "Package",
@@ -54,7 +58,7 @@
             },
             "Npgsql": {
               "target": "Package",
-              "version": "[5.0.3, )"
+              "version": "[7.0.2, )"
             }
           },
           "imports": [
