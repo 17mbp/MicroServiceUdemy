@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AoGJ3i7GfNevQXmeUZa3I/gACZvvj06l+wzEHR9FNm/lTtoj+3Z7pu9sGcbaaPtoHslEMDn+cvHAPtGGCLo/Lw==",
+  "dgSpecHash": "F9n4JyU73BK7uHGs+S6oip6H47Jwk81Hz/h1Gt3Z3dRhQjczcE67dzAFbjrwDF3U3M7HVJ/cIXdkR+084A9t0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\src\\Services\\Catalog\\Catalog.API\\Catalog.API.csproj",
   "expectedPackageFiles": [

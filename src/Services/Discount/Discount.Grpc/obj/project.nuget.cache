@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6R+d44ejOyTbSO7KopmmLEfedNRN3Y8zBQ7tyECCeg73BACIamSkLfwa9+JjBDbgZiphtT4Vdu8eSSx5HGS3Kw==",
+  "dgSpecHash": "s0CXEeBEyjjSvlg6xLMrJJKx+cvXEF4Wgp/qQRuxzMF0VXcoRkhL4wKxOwJNGDf0Y5TlF7gvUzaXidwCyqXCNg==",
   "success": true,
   "projectFilePath": "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\src\\Services\\Discount\\Discount.Grpc\\Discount.Grpc.csproj",
   "expectedPackageFiles": [

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "t5wj3istEgKMhN7/bHiO0nFuSJXFod8Cwi30X+OIfNy9wuLdpFVeYGwPyPrFB9jveCs9wRKUPIrdqc48nLbuAg==",
+  "dgSpecHash": "6AYdsLAar5ptc8vq2FNZnyoDxfJXkf5EeGPEE5snilWo+zxPG7TPLIBq/pX6Iq2guD5BTmm+1xliu9wi8cuVlg==",
   "success": true,
   "projectFilePath": "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\src\\Services\\Discount\\Discount.API\\Discount.API.csproj",
   "expectedPackageFiles": [
