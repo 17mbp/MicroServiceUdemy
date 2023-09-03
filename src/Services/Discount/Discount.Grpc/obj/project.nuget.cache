@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "s0CXEeBEyjjSvlg6xLMrJJKx+cvXEF4Wgp/qQRuxzMF0VXcoRkhL4wKxOwJNGDf0Y5TlF7gvUzaXidwCyqXCNg==",
+  "dgSpecHash": "gJ/0nmEhppjo08yxOuoQQ7ZBajd+Vm2eQ+iFXFSsRQkDLwAu4ZjGGB8NwtIf7f3D3FfcTDWAOyFAjwwgsP7sIQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\src\\Services\\Discount\\Discount.Grpc\\Discount.Grpc.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\MASTER\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\6.0.0\\microsoft.extensions.logging.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\MASTER\\.nuget\\packages\\microsoft.extensions.options\\6.0.0\\microsoft.extensions.options.6.0.0.nupkg.sha512",
     "C:\\Users\\MASTER\\.nuget\\packages\\microsoft.extensions.primitives\\6.0.0\\microsoft.extensions.primitives.6.0.0.nupkg.sha512",
+    "C:\\Users\\MASTER\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.11.1\\microsoft.visualstudio.azure.containers.tools.targets.1.11.1.nupkg.sha512",
     "C:\\Users\\MASTER\\.nuget\\packages\\npgsql\\7.0.2\\npgsql.7.0.2.nupkg.sha512",
     "C:\\Users\\MASTER\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\MASTER\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.5.1\\system.diagnostics.diagnosticsource.4.5.1.nupkg.sha512",

@@ -8,9 +8,11 @@ services:
     depends_on:
       basketdb:
         condition: service_started
+        required: true
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       CacheSettings:ConnectionString: basketdb:6379
+      GrpcSettings:DiscountUrl: http://discount.grpc
     image: basketapi
     networks:
       default: null
@@ -38,6 +40,7 @@ services:
     depends_on:
       catalogdb:
         condition: service_started
+        required: true
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       DatabaseSettings:ConnectionString: mongodb://catalogdb:27017
@@ -73,6 +76,7 @@ services:
     depends_on:
       discountdb:
         condition: service_started
+        required: true
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       DatabaseSettings:ConnectionString: Server=discountdb;Port=5432;Database=DiscountDb;User
@@ -84,6 +88,27 @@ services:
     - mode: ingress
       target: 80
       published: "8002"
+      protocol: tcp
+  discount.grpc:
+    build:
+      context: C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src
+      dockerfile: Services/Discount/Discount.Grpc/Dockerfile
+    container_name: discount.grpc
+    depends_on:
+      discountdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      DatabaseSettings:ConnectionString: Server=discountdb;Port=5432;Database=DiscountDb;User
+        Id=admin;Password=admin1234;
+    image: discountgrpc
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8003"
       protocol: tcp
   discountdb:
     container_name: discountdb
