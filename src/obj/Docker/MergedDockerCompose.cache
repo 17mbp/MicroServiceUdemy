@@ -130,6 +130,20 @@ services:
       source: postgres_data
       target: /var/lib/postgresql/data
       volume: {}
+  orderdb:
+    container_name: orderdb
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "123456"
+    image: mcr.microsoft.com/mssql/server:2017-latest
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 1433
+      published: "1433"
+      protocol: tcp
+    restart: always
   pgadmin:
     container_name: pgadmin
     environment:
