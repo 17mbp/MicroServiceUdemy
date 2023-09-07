@@ -15,6 +15,7 @@ C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Discoun
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Discount\Discount.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Discount\Discount.API\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Discount\Discount.API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Discount\Discount.API\obj\Debug\net5.0\Discount.API.csproj.AssemblyReference.cache
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Discount\Discount.API\obj\Debug\net5.0\Discount.API.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Discount\Discount.API\obj\Debug\net5.0\Discount.API.AssemblyInfoInputs.cache
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Discount\Discount.API\obj\Debug\net5.0\Discount.API.AssemblyInfo.cs
