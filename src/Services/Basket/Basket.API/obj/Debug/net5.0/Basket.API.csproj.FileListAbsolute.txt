@@ -1,0 +1,2 @@
+C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Basket\Basket.API\obj\Debug\net5.0\Basket.API.csproj.AssemblyReference.cache
+C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Basket\Basket.API\obj\Debug\net5.0\Basket.API.GeneratedMSBuildEditorConfig.editorconfig

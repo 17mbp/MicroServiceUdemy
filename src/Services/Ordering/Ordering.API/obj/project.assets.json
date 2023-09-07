@@ -6193,8 +6193,8 @@
     },
     "Ordering.Infrastructure/1.0.0": {
       "type": "project",
-      "path": "../../../../Ordering.Infrastructure/Ordering.Infrastructure.csproj",
-      "msbuildProject": "../../../../Ordering.Infrastructure/Ordering.Infrastructure.csproj"
+      "path": "../Ordering.Infrastructure/Ordering.Infrastructure.csproj",
+      "msbuildProject": "../Ordering.Infrastructure/Ordering.Infrastructure.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6238,11 +6238,11 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
-            },
             "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\src\\Services\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
               "projectPath": "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\src\\Services\\Ordering\\Ordering.Application\\Ordering.Application.csproj"
+            },
+            "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\src\\Services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\src\\Services\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
             }
           }
         }

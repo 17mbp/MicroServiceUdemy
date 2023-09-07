@@ -2,7 +2,6 @@ C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Orderin
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Ordering\Ordering.Domain\bin\Debug\net5.0\Ordering.Domain.dll
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Ordering\Ordering.Domain\bin\Debug\net5.0\ref\Ordering.Domain.dll
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Ordering\Ordering.Domain\bin\Debug\net5.0\Ordering.Domain.pdb
-C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Ordering\Ordering.Domain\obj\Debug\net5.0\Ordering.Domain.csproj.AssemblyReference.cache
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Ordering\Ordering.Domain\obj\Debug\net5.0\Ordering.Domain.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Ordering\Ordering.Domain\obj\Debug\net5.0\Ordering.Domain.AssemblyInfoInputs.cache
 C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src\Services\Ordering\Ordering.Domain\obj\Debug\net5.0\Ordering.Domain.AssemblyInfo.cs

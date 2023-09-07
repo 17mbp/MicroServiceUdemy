@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wMvBYVUAnM09gZXgtGyoZCGsB4M8jNRfTdw2gTTi6pa3LL2xl0KUAcBDqvuk4kcqm9amUBIDwXsTRIIVy43jlA==",
+  "dgSpecHash": "g/rWwFcsWM5gXwWKRrBHhXWvpia+Aj8jGRn5CZoHUh0QDjKIOhZoJv0oitbk5CyFOMOFMy/o9RjBYpSLWJZneQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\MASTER\\source\\repos\\VS22\\aspnet5microservicesUdemy\\src\\Services\\Ordering\\Ordering.API\\Ordering.API.csproj",
   "expectedPackageFiles": [

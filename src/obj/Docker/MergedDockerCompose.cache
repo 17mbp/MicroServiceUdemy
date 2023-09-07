@@ -144,6 +144,27 @@ services:
       published: "1433"
       protocol: tcp
     restart: always
+  ordering.api:
+    build:
+      context: C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src
+      dockerfile: Services/Ordering/Ordering.API/Dockerfile
+    container_name: ordering.api
+    depends_on:
+      orderdb:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ConnectionStrings:OrderingConnectionString: Server=orderdb;Database=OrderDb;User
+        Id=sa;Password=123456
+    image: orderingapi
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8004"
+      protocol: tcp
   pgadmin:
     container_name: pgadmin
     environment:
@@ -188,6 +209,21 @@ services:
       source: portainer_data
       target: /data
       volume: {}
+  rabbitmq:
+    container_name: rabbitmq
+    image: rabbitmq:3-management-alpine
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 5672
+      published: "5672"
+      protocol: tcp
+    - mode: ingress
+      target: 15672
+      published: "15672"
+      protocol: tcp
+    restart: always
 networks:
   default:
     name: dockercompose16065322309299742373_default
