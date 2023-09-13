@@ -6,7 +6,6 @@ using System;
 using Discount.Grpc.Repositories;
 using Discount.Grpc.Entities;
 using Discount.Grpc.Protos;
-
 namespace Discount.Grpc.Services
 {
     public class DiscountService : DiscountProtoService.DiscountProtoServiceBase
@@ -34,7 +33,6 @@ namespace Discount.Grpc.Services
             var couponModel = _mapper.Map<CouponModel>(coupon);
             return couponModel;
         }
-
         public override async Task<CouponModel> CreateDiscount(CreateDiscountRequest request, ServerCallContext context)
         {
             var coupon = _mapper.Map<Coupon>(request.Coupon);

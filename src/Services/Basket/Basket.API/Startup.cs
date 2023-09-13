@@ -43,9 +43,10 @@ namespace Basket.API
             {
                 config.UsingRabbitMq((ctx, cfg) =>
                 {
-                    cfg.Host("amp://guest:guest@localhost:5672"/*Configuration["EventBusSettings:HostAddress"]*/);
+                    //cfg.Host("amp://guest:guest@localhost:5672");
+                    cfg.Host(Configuration["EventBusSettings:HostAddress"]);
                 });
-            });
+            }); 
             services.AddMassTransitHostedService();
 
             services.AddControllers();

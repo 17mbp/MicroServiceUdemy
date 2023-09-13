@@ -134,7 +134,7 @@ services:
     container_name: orderdb
     environment:
       ACCEPT_EULA: "Y"
-      SA_PASSWORD: "123456"
+      SA_PASSWORD: admin123456
     image: mcr.microsoft.com/mssql/server:2017-latest
     networks:
       default: null
@@ -156,7 +156,7 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings:OrderingConnectionString: Server=orderdb;Database=OrderDb;User
-        Id=sa;Password=123456
+        Id=sa;Password=admin123456
     image: orderingapi
     networks:
       default: null

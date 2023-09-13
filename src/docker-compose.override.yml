@@ -16,42 +16,42 @@ services:
       - "6379:6379"
      
   discountdb:
-     container_name: discountdb
-     environment:
+    container_name: discountdb
+    environment:
       - POSTGRES_USER=admin
       - POSTGRES_PASSWORD=admin1234 
       - POSTGRES_DB=DiscountDb   
-     restart: always
-     ports:
+    restart: always
+    ports:
       - "5432:5432"
-     volumes:
+    volumes:
       - postgres_data:/var/lib/postgresql/data/
 
   orderdb:
-     container_name: orderdb
-     environment:
-        SA_PASSWORD: "123456"      
-        ACCEPT_EULA: "Y"
-     restart: always
-     ports:
+    container_name: orderdb
+    environment:
+      SA_PASSWORD: "admin123456"      
+      ACCEPT_EULA: "Y"
+    restart: always
+    ports:
       - "1433:1433"
 
   rabbitmq:
     container_name: rabbitmq
     restart: always
     ports:
-        - "5672:5672"
-        - "15672:15672"
+      - "5672:5672"
+      - "15672:15672"
               
   pgadmin:
-     container_name: pgadmin
-     environment:
+    container_name: pgadmin
+    environment:
       - PGADMIN_DEFAULT_EMAIL=admin@aspnetrun.com
       - PGADMIN_DEFAULT_PASSWORD=admin1234567
-     restart: always
-     ports:
+    restart: always
+    ports:
       - "5050:80"
-     volumes:
+    volumes:
       - pgadmin_data:/root/.pgadmin
 
   portainer:
@@ -109,8 +109,8 @@ services:
     container_name: ordering.api
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "ConnectionStrings:OrderingConnectionString=Server=orderdb;Database=OrderDb;User Id=sa;Password=123456"  
+      - "ConnectionStrings:OrderingConnectionString=Server=orderdb;Database=OrderDb;User Id=sa;Password=admin123456"  
     depends_on:
-        - orderdb 
+      - orderdb 
     ports:
-        - "8004:80"
+      - "8004:80"

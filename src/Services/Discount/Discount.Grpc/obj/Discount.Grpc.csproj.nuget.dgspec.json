@@ -54,7 +54,7 @@
             },
             "Grpc.AspNetCore": {
               "target": "Package",
-              "version": "[2.34.0, )"
+              "version": "[2.36.0, )"
             },
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
