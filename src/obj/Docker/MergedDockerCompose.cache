@@ -9,9 +9,13 @@ services:
       basketdb:
         condition: service_started
         required: true
+      rabbitmq:
+        condition: service_started
+        required: true
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       CacheSettings:ConnectionString: basketdb:6379
+      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:5672
       GrpcSettings:DiscountUrl: http://discount.grpc
     image: basketapi
     networks:
@@ -153,10 +157,14 @@ services:
       orderdb:
         condition: service_started
         required: true
+      rabbitmq:
+        condition: service_started
+        required: true
     environment:
       ASPNETCORE_ENVIRONMENT: Development
       ConnectionStrings:OrderingConnectionString: Server=orderdb;Database=OrderDb;User
         Id=sa;Password=admin123456
+      EventBusSettings:HostAddress: amqp://guest:guest@rabbitmq:5672
     image: orderingapi
     networks:
       default: null
