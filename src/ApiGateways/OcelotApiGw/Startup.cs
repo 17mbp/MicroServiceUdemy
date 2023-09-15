@@ -5,13 +5,14 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Ocelot.DependencyInjection;
 using Ocelot.Middleware;
+using Ocelot.Cache.CacheManager;
 namespace OcelotApiGw
 {
     public class Startup
     {      
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddOcelot();
+            services.AddOcelot().AddCacheManager(settings => settings.WithDictionaryHandle());
         }
                 
         public async void Configure(IApplicationBuilder app, IWebHostEnvironment env)
