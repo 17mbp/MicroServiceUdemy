@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace Ordering.API.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]    
+    [Route("api/v1/[controller]")]    
     public class OrderController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -31,7 +31,7 @@ namespace Ordering.API.Controllers
             return Ok(ord);
         }
 
-        [HttpGet(Name = "CheckoutOrder")]  // testing porpouse
+        [HttpPost(Name = "CheckoutOrder")]  // testing porpouse
         [ProducesResponseType((int)HttpStatusCode.OK)]
         public async Task<ActionResult<int>> CheckoutOrder([FromBody] CheckoutOrderCommand  command)
         {

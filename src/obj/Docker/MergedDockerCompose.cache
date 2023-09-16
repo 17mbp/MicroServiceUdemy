@@ -134,6 +134,34 @@ services:
       source: postgres_data
       target: /var/lib/postgresql/data
       volume: {}
+  ocelotapigw:
+    build:
+      context: C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src
+      dockerfile: ApiGateways/OcelotApiGw/Dockerfile
+    container_name: ocelotapigw
+    depends_on:
+      basket.api:
+        condition: service_started
+        required: true
+      catalog.api:
+        condition: service_started
+        required: true
+      discount.api:
+        condition: service_started
+        required: true
+      ordering.api:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+    image: ocelotapigw
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8010"
+      protocol: tcp
   orderdb:
     container_name: orderdb
     environment:
