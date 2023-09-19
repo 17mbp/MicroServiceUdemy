@@ -260,6 +260,34 @@ services:
       published: "15672"
       protocol: tcp
     restart: always
+  shopping.agregator:
+    build:
+      context: C:\Users\MASTER\source\repos\VS22\aspnet5microservicesUdemy\src
+      dockerfile: ApiGateways/Shopping.Agregator/Dockerfile
+    container_name: shopping.agregator
+    depends_on:
+      basket.api:
+        condition: service_started
+        required: true
+      catalog.api:
+        condition: service_started
+        required: true
+      ordering.api:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ApiSettings:BasketUrl: http://basket.api
+      ApiSettings:CatalogUrl: http://catalog.api
+      ApiSettings:OrderingUrl: http://ordering.api
+    image: shoppingagregator
+    networks:
+      default: null
+    ports:
+    - mode: ingress
+      target: 80
+      published: "8005"
+      protocol: tcp
 networks:
   default:
     name: dockercompose16065322309299742373_default
